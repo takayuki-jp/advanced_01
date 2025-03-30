@@ -1,0 +1,28 @@
+//variables
+
+$black: #121212;
+$white: #ffffff;
+
+
+@mixin section-title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  @include mobile {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+}
+
+
+$mb: 767px;
+
+@mixin mobile {
+  @media screen and (max-width: $mb) {
+    @content;
+  }
+}

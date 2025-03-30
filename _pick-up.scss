@@ -1,0 +1,14 @@
+//pick-up
+.pick-up {
+  margin-top: 100px;
+  @include mobile {
+    margin-top: 80px;
+  }
+  .swiper {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+
+  }
+}
+
